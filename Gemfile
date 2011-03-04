@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 gem 'sinatra'
 gem 'pg'
+gem 'activerecord'
 
 group :development, :test do
   gem 'shotgun'

@@ -1,5 +1,5 @@
-require 'sinatra'
+require './plumbing'
 
-get '/hi' do
-  "Hello World!"
+get '/' do
+  'Hello, world!'
 end
