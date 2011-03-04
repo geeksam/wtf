@@ -20,4 +20,4 @@ That's better.
 
 * Because a coworker suggested it, and I thought it was funny.
 * Because I'm long overdue to learn how to use (or, in some cases, rusty on) things like Sinatra, Bundler, Heroku, and Capybara (especially now that it's eaten Steak).
-* To see if I can make it into the Ruby Show's Hall of Fame. Er, again.
+* To see if I can make it into [The Ruby Show](http://rubyshow.com/)'s [Hall of Fame](http://rubyshow.com/pages/hall-of-fame). Er, again.
