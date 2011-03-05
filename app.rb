@@ -3,22 +3,19 @@ require File.join(AppRoot, *%w[config environment])
 require 'sinatra'
 require File.join(AppRoot, *%w[helpers])
 
+## App root
 
 get '/' do
   erb :index
 end
 
+## Projects
 
 get '/projects' do
-  @projects = Project.all
-  erb :'projects/index'
-end
-
-get '/projects/new' do
   erb :'projects/new'
 end
 
-post '/projects' do
+post '/projects/create' do
   @project = Project.create(params[:project])
   if @project.valid?
     redirect to("/projects/#{@project.slug}")
