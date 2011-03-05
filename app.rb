@@ -26,5 +26,9 @@ end
 
 get '/projects/:slug' do
   @project = Project.find_by_slug(params[:slug])
-  erb :'projects/show'
+  if @project.blank?
+    redirect to('/projects')
+  else
+    erb :'projects/show'
+  end
 end

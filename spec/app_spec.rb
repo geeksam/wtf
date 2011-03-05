@@ -41,6 +41,11 @@ describe "WTF Tracker" do
   end
 
   describe "the project page" do
+    it "should redirect back to /projects if project cannot be found" do
+      visit '/projects/i-do-not-exist'
+      current_path.should == '/projects'
+    end
+
     it "should exist"
   end
 
