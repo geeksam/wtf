@@ -1,9 +1,13 @@
-require 'active_record'
+# Gem voodoo
+require 'rubygems'
+require 'bundler'
+Bundler.setup
 
-dbconfig = YAML.load(File.read('config/database.yml'))
+# Set up ActiveRecord
+require 'active_record'
+dbconfig = YAML.load(File.read(File.join(AppRoot, *%w[config database.yml])))
 ActiveRecord::Base.establish_connection dbconfig[ENV['RACK_ENV'] || 'development']
 
-AppRoot = File.expand_path(File.join(File.dirname(__FILE__), *%w[..]))
+# Require models
 $: << File.join(AppRoot, 'models')
-
 require 'project'

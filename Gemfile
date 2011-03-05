@@ -8,4 +8,5 @@ group :development, :test do
   # Using Capybara head, following example at
   # http://opinionated-programmer.com/2011/02/capybara-and-selenium-with-rspec-and-rails-3/
   gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
+  gem 'rspec'
 end

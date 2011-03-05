@@ -1,6 +1,7 @@
+AppRoot = File.expand_path(File.dirname(__FILE__))
+require File.join(AppRoot, *%w[config environment])
 require 'sinatra'
-require './config/environment'
-require './helpers'
+require File.join(AppRoot, *%w[helpers])
 
 
 get '/' do
