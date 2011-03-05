@@ -1,13 +1,28 @@
 <form action="/projects/create" method="post" accept-charset="utf-8">
-  <p>
-    <label for="project_name">Name</label>:<br />
-    <input type="text" name="project[name]" value="" id="project_name">
-  </p>
-  <p>
-    <label for="project_slug">Slug</label>:<br />
-    <input type="text" name="project[slug]" value="" id="project_slug">
-  </p>
-  <p>
-    <input type="submit" value="Create Project">
-  </p>
+  <div class="row">
+    <div class="column grid_3">
+      <h3>Create a Project</h3>
+    </div>
+    <div class="column grid_9">
+      <div class="row"><div class="column grid_1">&nbsp;</div></div><!-- spacer -->
+      <div class="row">
+        <div class="column grid_1"><label for="project_name">Name</label>:</div>
+        <div class="column grid_2"><input type="text" name="project[name]" value="" id="project_name"></div>
+        <div class="column grid_6">
+          <span class="help">Self-explanatory, I hope.</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column grid_1"><label for="project_slug">Slug</label>:</div>
+        <div class="column grid_2"><input type="text" name="project[slug]" value="" id="project_slug"></div>
+        <div class="column grid_6">
+          <span class="help">The slug is the part of the URL that identifies your project, like so: <code>/projects/slug</code></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column grid_1">&nbsp;</div>
+        <div class="column grid_2"><input type="submit" value="Create Project"></div>
+      </div>
+    </div>
+</div>
 </form>

@@ -1,0 +1,31 @@
+/* I'm a developer, not a designer.  I'm sure I'm committing a great number of WTFs here. */
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+
+h1, h2, h3, h4, h5, h6 { 
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+#masthead {
+  border-bottom: 1px dotted gray;
+}
+
+#masthead a {
+  text-decoration: none;
+}
+
+/*.column { border: 1px solid red; }
+.row    { border: 1px solid green; }
+h1, h2, h3, h4, h5, h6 { border: 1px solid blue; }*/
+
+ul.sidebar li {
+  text-align: right;
+  list-style: none;
+  margin-bottom: 0.5em;
+}
+
+.help {
+  font-size: 0.8em;
+}

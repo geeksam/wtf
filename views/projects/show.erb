@@ -1,2 +1,14 @@
-<h1><%= @project.name %></h1>
-<h2><%= @project.slug %></h2>
+<div class="row">
+  <div class="column grid_3">
+    <h3>Project: <%= @project.name %></h3>
+  </div>
+  <div class="column grid_6 center">
+    <p><strong>Bookmark this page.</strong></p>
+    <div class="help">
+      <p>There's no way to list projects.  This is intended to keep them somewhat private without my having to actually implement authentication and authorization.</p>
+    </div>
+  </div>
+  <div class="column grid_3 right">
+    <p>Created on: <%= @project.created_at.to_date %></p>
+  </div>
+</div>
